@@ -13,7 +13,9 @@ app.use(express.json());
 app.use("/api/todos",todoRoutes);
 const __dirname=path.resolve();
 
-
+app.get("/health", (req, res) => {
+  res.status(200).send("OK");
+});
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
@@ -27,9 +29,10 @@ const startServer = async () => {
   try {
     await connectDB();
 
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
+   app.listen(PORT, "0.0.0.0", () => {
+  console.log("PORT env:", process.env.PORT);
+  console.log(`Server running on port ${PORT}`);
+});
   } catch (err) {
     console.error(err);
   }
