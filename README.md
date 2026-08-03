@@ -2,6 +2,8 @@
 
 A full-stack Todo application built using the MERN stack. Users can create, view, update, and delete tasks through a clean and responsive interface.
 
+## go check out at
+ https://mern-todo-app-9xc4.onrender.com
 ## 🚀 Features
 
 - ➕ Add new todos
@@ -188,5 +190,5 @@ This project is licensed under the MIT License.
 
 **Yash**
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-linkedin
+- GitHub: https://github.com/reacher-virus
+- LinkedIn: https://linkedin.com/in/yashAgnihotri
