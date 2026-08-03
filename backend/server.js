@@ -4,9 +4,9 @@ import { connectDB } from "./config/db.js";
 import todoRoutes from "./routes/todo.route.js";
 import cors from "cors";
 import path from "path";
-
-const PORT=process.env.PORT || 5000;
 dotenv.config();
+const PORT=process.env.PORT || 5000;
+
 //app.use(cors());
 const app=express();
 app.use(express.json());
